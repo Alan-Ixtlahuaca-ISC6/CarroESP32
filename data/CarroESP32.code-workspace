@@ -1,0 +1,29 @@
+{
+	"folders": [
+		{
+			"path": "../../CarroESP32"
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": "../include"
+		},
+		{
+			"path": "../lib"
+		},
+		{
+			"path": "../src"
+		},
+		{
+			"path": "../test"
+		},
+		{
+			"path": "../.pio"
+		},
+		{
+			"path": "../.vscode"
+		}
+	],
+	"settings": {}
+}

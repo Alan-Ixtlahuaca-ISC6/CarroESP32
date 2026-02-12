@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control Digital - Modo Carrera</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button class="menu-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <div class="header-container">
+        <h1>Control Digital</h1>
+        <div class="status-panel">
+            <div class="status-label" id="status1">Modo Carrera</div>
+            <div class="status-label" id="status2">---</div>
+        </div>
+    </div>
+
+    <div class="controls-bottom">
+        <!-- Controles de dirección (izquierda) -->
+        <div class="control-group">
+            <div class="control-buttons">
+                <button class="control-btn" id="btnLeft" data-action="izquierda">‹</button>
+                <button class="control-btn" id="btnRight" data-action="derecha">›</button>
+            </div>
+            <div class="key-hint">A/D o ←/→</div>
+        </div>
+
+        <!-- Controles de funciones (centro) -->
+        <div class="center-controls">
+            <button class="function-btn" id="btnHazard">
+                <span>⚠</span>
+                <span class="btn-text">Preventivas</span>
+                <span style="font-size: 0.5rem; opacity: 0.6;">1</span>
+            </button>
+            <button class="function-btn" id="btnTurnLeft">
+                <span>◄</span>
+                <span class="btn-text">Izq</span>
+                <span style="font-size: 0.5rem; opacity: 0.6;">2</span>
+            </button>
+            <button class="function-btn" id="btnTurnRight">
+                <span>►</span>
+                <span class="btn-text">Der</span>
+                <span style="font-size: 0.5rem; opacity: 0.6;">3</span>
+            </button>
+            <button class="function-btn lights-off" id="btnLights">
+                <span id="lightIcon">💡</span>
+                <span class="btn-text">Luces</span>
+                <span style="font-size: 0.5rem; opacity: 0.6;">4</span>
+            </button>
+            <button class="function-btn" id="btnSiren">
+                <span>🚨</span>
+                <span class="btn-text">Sirena</span>
+                <span style="font-size: 0.5rem; opacity: 0.6;">5</span>
+            </button>
+            <button class="function-btn" id="btnHorn">
+                <span>📢</span>
+                <span class="btn-text">Claxon</span>
+                <span style="font-size: 0.5rem; opacity: 0.6;">6</span>
+            </button>
+        </div>
+
+        <!-- Controles de velocidad (derecha) -->
+        <div class="control-group">
+            <div class="control-buttons">
+                <button class="control-btn" id="btnAccelerate" data-action="adelante">
+                    <span>∧</span>
+                    <span class="btn-label">GAS</span>
+                </button>
+                <button class="control-btn" id="btnBrake" data-action="atras">
+                    <span>∨</span>
+                    <span class="btn-label">BRAKE</span>
+                </button>
+            </div>
+            <div class="key-hint">W/S o ↑/↓</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
